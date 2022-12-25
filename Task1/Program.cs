@@ -1,6 +1,6 @@
 ﻿//Написать программу, которая из имеющегося массива строк формирует новый массив из строк,
- //длина которых меньше, либо равна 3 символам. 
- //Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма.
+//длина которых меньше, либо равна 3 символам. 
+//Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма.
 // Примеры:
 // [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
@@ -17,16 +17,14 @@ PrintArray(array);
 Console.WriteLine();
 SortArray(array);
 
-
- void CreateArray(string[] array) // создаем массив из введеных строк
+void CreateArray(string[] array) // создаем массив из введеных строк
 {
-   
+
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = Console.ReadLine();
     }
 }
-
 
 void PrintArray(string[] array) // вывод заданного массива
 {
@@ -35,9 +33,8 @@ void PrintArray(string[] array) // вывод заданного массива
 
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($" {array[i]},");
+        Console.Write($"{array[i]} ,");
     }
-
     Console.Write("]");
     Console.WriteLine();
 }
@@ -50,10 +47,10 @@ void SortArray(string[] array) // метод  сортировки
     {
         if (array[i].Length <= 3) // проверяем условие задачи (<= 3)
         {
-            Console.Write(array[i] + ","); // записываем в наш массив 
+            Console.Write(array[i] + " ,"); // записываем в наш массив 
         }
     }
     Console.Write("]");
-    Console.WriteLine();
+    Console.WriteLine(); a
 }
 
