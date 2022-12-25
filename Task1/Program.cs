@@ -10,3 +10,15 @@
 Console.WriteLine("Введите строки массива через enter: ");
 
 string[] array = new string[5]; // ограничние в 5 слов (элементов массива) 
+
+
+
+ void CreateArray(string[] array) // создаем массив из введеных строк
+{
+   
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = Console.ReadLine();
+    }
+}
+
