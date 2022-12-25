@@ -15,6 +15,7 @@ CreateArray(array);
 Console.WriteLine();
 PrintArray(array);
 Console.WriteLine();
+SortArray(array);
 
 
  void CreateArray(string[] array) // создаем массив из введеных строк
@@ -40,3 +41,19 @@ void PrintArray(string[] array) // вывод заданного массива
     Console.Write("]");
     Console.WriteLine();
 }
+
+void SortArray(string[] array) // метод  сортировки
+{
+    Console.WriteLine("Результат: массив, длина строк котрого меньше либо равна 3 символам");
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++) // перебираем весь массив 
+    {
+        if (array[i].Length <= 3) // проверяем условие задачи (<= 3)
+        {
+            Console.Write(array[i] + ","); // записываем в наш массив 
+        }
+    }
+    Console.Write("]");
+    Console.WriteLine();
+}
+
