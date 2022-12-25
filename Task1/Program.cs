@@ -11,6 +11,10 @@ Console.WriteLine("Введите строки массива через enter: 
 
 string[] array = new string[5]; // ограничние в 5 слов (элементов массива) 
 
+CreateArray(array);
+Console.WriteLine();
+PrintArray(array);
+Console.WriteLine();
 
 
  void CreateArray(string[] array) // создаем массив из введеных строк
@@ -22,3 +26,17 @@ string[] array = new string[5]; // ограничние в 5 слов (элем�
     }
 }
 
+
+void PrintArray(string[] array) // вывод заданного массива
+{
+    Console.WriteLine("Заданный массив :");
+    Console.Write("[");
+
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($" {array[i]},");
+    }
+
+    Console.Write("]");
+    Console.WriteLine();
+}
