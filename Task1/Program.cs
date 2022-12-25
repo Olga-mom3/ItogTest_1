@@ -51,6 +51,6 @@ void SortArray(string[] array) // метод  сортировки
         }
     }
     Console.Write("]");
-    Console.WriteLine(); a
+    Console.WriteLine();
 }
 
